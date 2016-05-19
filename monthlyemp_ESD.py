@@ -75,4 +75,6 @@ testfile.retrieve("http://randomsite.com/file.gz", "file.gz")
 
 # http://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe
 
+# Sum rows in the dataframe:
 
+# http://stackoverflow.com/questions/25748683/python-pandas-sum-dataframe-rows-for-given-columns
