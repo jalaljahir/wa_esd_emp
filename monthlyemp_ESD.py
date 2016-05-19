@@ -53,6 +53,9 @@ testfile.retrieve("http://randomsite.com/file.gz", "file.gz")
 # Time: http://stackoverflow.com/questions/7370801/measure-time-elapsed-in-python
 # Time: http://stackoverflow.com/questions/311627/how-to-print-date-in-a-regular-format-in-python
 
+# Date: http://stackoverflow.com/questions/25146121/extracting-just-month-and-year-from-pandas-datetime-column-python
+
+# Date time to String: http://stackoverflow.com/questions/22276503/how-to-i-change-data-type-of-pandas-data-frame-to-string-with-a-defined-format
 # Get-Current-Directory: 
 # http://stackoverflow.com/questions/5137497/find-current-directory-and-files-directory 
 
