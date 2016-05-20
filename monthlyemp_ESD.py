@@ -67,6 +67,7 @@ testfile.retrieve("http://randomsite.com/file.gz", "file.gz")
 
 # http://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
 
+
 #Delete rows in dataframe:
 
 # http://stackoverflow.com/questions/16396903/delete-first-three-rows-of-a-dataframe-in-pandas
@@ -74,6 +75,8 @@ testfile.retrieve("http://randomsite.com/file.gz", "file.gz")
 # delete columns in dataframe:
 
 # http://stackoverflow.com/questions/13411544/delete-column-from-pandas-dataframe
+
+# Rename Columns: http://stackoverflow.com/questions/11346283/renaming-columns-in-pandas
 
 # Sum rows in the dataframe:
 
