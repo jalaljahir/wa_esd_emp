@@ -276,7 +276,7 @@ def data_to_workbook():
 
     sa_writer.save()
     
-    print "\nProcessed data been exported to the excel file located at the working directory: " + "\n" + os.getcwd() + "\nNew Worksheets: \n1. Region Master \n2. Region_Sector \n3. Region_CMonth \n4. Region_Sec_CMonth "
+    print "\nProcessed data been exported to the excel file located at the working directory: " + "\n" + os.getcwd() + "\nNew Worksheets: \n1. Region_Master \n2. Region_Sector \n3. Region_CMonth \n4. Region_Sec_CMonth "
 
 
 
