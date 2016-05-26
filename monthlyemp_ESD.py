@@ -65,7 +65,7 @@ def check_worksheet():
         count_ws = count_ws+1 
         print str(count_ws)+". "+ x
 
-    print "Total "+str(count)+" "+"out of "+ str(count_total)+ " worksheets from the excel file include data for the PSRC region."
+    print "Total "+str(count)+" "+"out of "+ str(count_total)+ " worksheets contain data for the PSRC region."
 
 
 def sa_kin_sno():
@@ -129,7 +129,7 @@ def sa_kin_sno():
     #df_sa_kit["Kitsap: Total NonFarm"].isin(df_sa_kit[kit_col_list[3:]].sum(axis=1)).all() == True.... works too for this step.
 
     if df_sa_kin_sno["King & Snohomish: Total NonFarm"].isin(df_sa_kin_sno.ix[:,3:].sum(axis=1)).all() == True:
-        print "\nChecked: King & Snohomish Counties - All industry sectors adds up to total NonFarm jobs..."
+        print "\nChecked: King & Snohomish Counties- All industry sectors add up to total NonFarm jobs..."
     else:
         print "\nERROR!!"
     return df_sa_kin_sno
@@ -164,7 +164,7 @@ def sa_kit():
     df_sa_kit = df_sa_kit.drop(df_sa_kit.columns[:16], axis = 1)
 
     if df_sa_kit["Kitsap: Total NonFarm"].isin(df_sa_kit.ix[:,3:].sum(axis=1)).all() == True:
-        print "\nChecked: Kitsap County - All industry sectors adds up to total NonFarm jobs..."
+        print "Checked: Kitsap County- All industry sectors add up to total NonFarm jobs..."
     else:
         print "\nERROR!!"
     return df_sa_kit
@@ -199,7 +199,7 @@ def sa_pie():
     df_sa_pie = df_sa_pie.drop(df_sa_pie.columns[:32], axis = 1)    
 
     if df_sa_pie["Pierce: Total NonFarm"].isin(df_sa_pie.ix[:,3:].sum(axis=1)).all() == True:
-        print "\nChecked: Pierce County - All industry sectors adds up to total NonFarm jobs..."
+        print "Checked: Pierce County- All industry sectors add up to total NonFarm jobs..."
     else:
         print "\nERROR!!"
     return df_sa_pie
@@ -227,7 +227,7 @@ def sa_region():
     df_sa_region["Region: Total NonFarm"] = df_sa_region[region_list[2]] + df_sa_region[region_list[11]] + df_sa_region[region_list[20]]
     
     
-    print "\nChecked: Regional dataframe completed..."
+    print "Checked: Regional dataframe completed..."
     
     return df_sa_region
 
@@ -257,7 +257,7 @@ def delete_ws():
 
     wb_sa.save(os.getcwd()+"/"+ sa_filename)
     
-    print "\nWorksheets not included in the processing are deleted..."
+    print "\nWorksheets not included in the processing been deleted..."
 
 
 def data_to_workbook():
@@ -276,7 +276,7 @@ def data_to_workbook():
 
     sa_writer.save()
     
-    print "\nProcessed data are exported to the excel workbook located at the working directory:  "+"\n"+ os.getcwd() + "\nWorksheet Name: \n1. Region Master \n2. Region_Sector \n3. Region_CMonth \n4. Region_Sec_CMonth "
+    print "\nProcessed data been exported to the excel file located at the working directory: " + "\n" + os.getcwd() + "\nNew Worksheets: \n1. Region Master \n2. Region_Sector \n3. Region_CMonth \n4. Region_Sec_CMonth "
 
 
 
@@ -284,6 +284,7 @@ process_start = time.time()
     
 download_esd_sa()
 check_worksheet()
+
 df_sa_kin_sno = sa_kin_sno()
 df_sa_kit = sa_kit()
 df_sa_pie = sa_pie()
@@ -306,11 +307,11 @@ process_end = time.time()
 
 processtime = process_end - process_start    
 
-print "\nProcessing Completed! \nProcessing Time: " + "{0: .3}".format(processtime) + " Sec."
+print "\nProcessing Completed! \nTotal Processing Time: " + "{0: .3}".format(processtime) + " Sec."
 
 
 
-exit()
+
 
 ###############
 
